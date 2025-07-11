@@ -114,6 +114,6 @@ This extension is open-source under the MIT License. Contributions and improveme
 *Figure: (1) API key entry via the extension’s options page, (2) AZ Assistant button injected on a problem page, (3) Chat assistant interface where you can communicate.*
 
 ---
-
-**Demo Video:** [Download or stream from Google Drive]([https://drive.google.com/uc?export=download&id=FILE_ID](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=drive_link))
+**Demo Video**
+[![Watch demo](assets/webpage2.png)]([https://drive.google.com/file/d/FILE_ID/view?usp=sharing](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=drive_link))
 

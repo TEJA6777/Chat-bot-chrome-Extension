@@ -1,41 +1,124 @@
-# Chrome-Extension-Base-Template
-This is a basic Chrome Extension base template for starting new projects off of initialized with a MIT license.
+# AZ Assistant Chrome Extension
+
+AZ Assistant is a Chrome extension designed to enhance the user experience on coding problem platforms by providing an AI-powered chatbot assistant directly on problem pages.
+
+---
+
+## Overview
+
+AZ Assistant injects a user-friendly chat interface into supported problem pages, allowing users to:
+
+- Retrieve and discuss saved code snippets.  
+- Maintain a persistent conversation history per problem.  
+- Receive intelligent guidance tailored to each coding challenge.  
+
+---
 
 ## Features
-- ..
-- ..
-- ..
 
-## Author
-First Last
-- [Author Website]()
-- [Author Github]()
-- [Project Repository]()
+- **Chat Overlay**: A modern dark-themed chat UI that appears on problem pages.  
+- **Persistent Conversations**: Automatically stores chat history in `localStorage` for each problem.  
+- **Retrieve Code Snippets**: Fetches previously saved code snippets based on the problem ID and language.  
+- **Smart Chat Button**: Replaces the default “Ask Doubt” button with an **AZ Assistant** button.  
+- **Clear Chat History**: Allows users to reset the conversation for a fresh start.  
+- **Close Overlay**: Easily exit the chat interface when done.  
+- **Auto-Detect Problem ID**: Parses the problem ID from the URL to load relevant context.  
 
-## Requirements
-### Knowledge
-- HTML
-- CSS
-- Javascript
-- Chrome API
-### Tools
-- Google Chrome Browser
-- IDE or Text Editor of Your Choice
+---
 
-## Setup Instructions
-### For Developers
-1. Make a clone of this project, unzipped.
-2. Open Chrome Browser
-3. In a new or blank tab, type in "chrome://extensions/" (without the quotes of course) and click [Enter].
-4. At the top right corner of the page, **enable** "Developer Mode"
-5. Click the button on the page that says "Load Unpacked"
-6. Navigate to your unzipped project folder and select that and hit OK.
-7. You are now ready to start working on the extension! Just make sure you reload after each change you make to see the changes take place.
+## Installation
 
-### For End Users
-1. ...
-2. ...
-3. ...
+1. Clone or download the extension files to your local machine.  
+2. Open Google Chrome and navigate to `chrome://extensions/`.  
+3. Enable **Developer mode** (toggle at the top-right).  
+4. Click **Load unpacked** and select the extension folder.  
+5. The **AZ Assistant** button will now appear on supported coding problem pages.  
+
+---
+
+## How It Works
+
+### Chat Button Injection
+
+- The extension uses a `MutationObserver` to detect when a problem page loads.  
+- It clones the existing “Ask Doubt” button, renames it to **AZ Assistant**, and appends an icon.  
+- Clicking this button opens the chat overlay.  
+
+### Chat Overlay UI
+
+- **Header**: Shows the extension title with buttons to close the overlay or clear chat history.  
+- **Body**: Displays past messages and new responses.  
+- **Footer**: Contains an input field and send button for user messages.  
+
+### Persistent Storage
+
+- **Chat History**: Saved under `conversationHistory_<problemId>` in `localStorage`.  
+- **Code Snippets**: Retrieved from keys formatted as `course_<userId>_<problemId>_<language>`.  
+- **Editor Language**: Fetched from `localStorage` to present relevant code examples.  
+
+---
+
+## How to Use
+
+1. Navigate to a supported problem page.  
+2. Click the **AZ Assistant** button.  
+3. Type your message or question in the input field and hit **Send**.  
+4. Review AI-generated guidance and retrieve saved code snippets as needed.  
+5. Click **Clear** to reset the conversation, or **X** to close the chat overlay.  
+
+---
+
+## Technologies Used
+
+- **JavaScript**: Core logic for button injection, DOM manipulation, and API communication.  
+- **localStorage**: For persisting chat history and code snippets.  
+- **CSS**: Custom styles for the dark-themed chat UI.  
+- **MutationObserver**: To monitor DOM changes and inject UI elements dynamically.  
+
+---
+
+## Future Enhancements
+
+- **AI Responses**: Integrate with an AI service (e.g., Gemini API) for real-time problem-solving assistance.  
+- **Code Execution**: Allow users to run snippets directly within the extension.  
+- **User Authentication**: Sync conversations and snippets across devices.  
+- **Theming Options**: Light/dark mode toggle and customizable UI skins.  
+
+---
+
+## Troubleshooting
+
+- **Button Not Visible**: Refresh the page or confirm you’re on a supported URL.  
+- **Storage Issues**: Ensure `localStorage` is enabled and has sufficient quota.  
+- **Extension Errors**: Reload the extension from `chrome://extensions/` and check the console for logs.  
+
+---
 
 ## License
-Please refer to LICENSE file.
+
+This extension is open-source under the MIT License. Contributions and improvements are welcome! See the [LICENSE](LICENSE) file for details.  
+
+---
+
+## Sample Screenshots
+
+<!-- Store your screenshots in a folder called `assets/` (or `images/`) at the root of your repo -->
+
+<div align="center">
+  <img src="assets/screenshot-1.png" alt="AZ Assistant on problem page" width="400" />
+  <img src="assets/screenshot-2.png" alt="Chat overlay UI" width="400" />
+</div>
+
+*Figure: AZ Assistant injected into a problem page (left) and the chat overlay (right).*
+
+---
+
+## Demo Video
+
+You have two main options:
+
+1. **Link to a YouTube (or other host) video** with a thumbnail:
+
+   ```markdown
+   [![Watch the demo](assets/video-thumbnail.png)](https://youtu.be/YourVideoID)
+

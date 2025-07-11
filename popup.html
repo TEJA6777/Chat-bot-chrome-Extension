@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemini API Key Setup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <img src="assets/exten.png" alt="Extension Icon" class="popup-icon">
+      <h3>Gemini API Key</h3>
+    </div>
+    <div class="popup-content">
+      <label for="apiKeyInput">API Key:</label>
+      <input type="text" id="apiKeyInput" placeholder="Enter your API key here" readonly>
+    </div>
+    <div class="popup-actions">
+      <button id="editApiKey">Edit</button>
+      <button id="saveApiKey">Save</button>
+    </div>
+    <p id="status"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

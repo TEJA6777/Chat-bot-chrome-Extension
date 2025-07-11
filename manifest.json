@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Chatbot",
+  "version": "1.0",
+  "author": "Kodati Sai Teja",
+  "description": "A chatbot that helps users get the solution to a coding problem using the Gemini API.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://maang.in/problems/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://maang.in/problems/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/logo2.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/exten.png",
+      "24": "assets/exten.png",
+      "32": "assets/exten.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Click to open Helper chatbot."
+  }
+}

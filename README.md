@@ -111,16 +111,13 @@ This extension is open-source under the MIT License. Contributions and improveme
   
 </div>
 
-*Figure: AZ Assistant injected into a problem page (left) and the chat overlay (right).*
+*Figure: (1) API key entry via the extension’s options page, (2) AZ Assistant button injected on a problem page, (3) Chat assistant interface where you can communicate.*
 
 ---
 
-## Demo Video
-
-You have two main options:
-
-1. **Link to a YouTube (or other host) video** with a thumbnail:
-
-   ```markdown
-   [![Watch the demo](assets/video-thumbnail.png)](https://youtu.be/YourVideoID)
+<h3>Demo Video</h3>
+<iframe 
+  src="[https://drive.google.com/file/d/FILE_ID/preview](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=sharing)" 
+  width="640" height="360" allow="autoplay">
+</iframe>
 

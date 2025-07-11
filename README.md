@@ -105,8 +105,10 @@ This extension is open-source under the MIT License. Contributions and improveme
 <!-- Store your screenshots in a folder called `assets/` (or `images/`) at the root of your repo -->
 
 <div align="center">
-  <img src="assets/screenshot-1.png" alt="AZ Assistant on problem page" width="400" />
-  <img src="assets/screenshot-2.png" alt="Chat overlay UI" width="400" />
+  <img src="assets/webpage3.png" alt="API Key in chrome extention" width="400" />
+  <img src="assets/webpage1.png" alt="AZ Asisitant on problem page" width="400" />
+  <img src="assets/webpage2.png" alt="AZ Assistant on problem page" width="400" />
+  
 </div>
 
 *Figure: AZ Assistant injected into a problem page (left) and the chat overlay (right).*

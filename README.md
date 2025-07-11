@@ -105,11 +105,26 @@ This extension is open-source under the MIT License. Contributions and improveme
 <!-- Store your screenshots in a folder called `assets/` (or `images/`) at the root of your repo -->
 
 <div align="center">
-  <img src="assets/webpage3.png" alt="API Key in chrome extention" width="400" />
-  <img src="assets/webpage1.png" alt="AZ Asisitant on problem page" width="400" />
-  <img src="assets/webpage2.png" alt="AZ Assistant on problem page" width="400" />
-  
+  <img 
+    src="assets/webpage3.png" 
+    alt="API Key in chrome extension" 
+    width="600" 
+    height="450" 
+  />
+  <img 
+    src="assets/webpage1.png" 
+    alt="AZ Assistant on problem page" 
+    width="600" 
+    height="450" 
+  />
+  <img 
+    src="assets/webpage2.png" 
+    alt="Chat assistant interface" 
+    width="600" 
+    height="450" 
+  />
 </div>
+
 
 *Figure: (1) API key entry via the extension’s options page, (2) AZ Assistant button injected on a problem page, (3) Chat assistant interface where you can communicate.*
 

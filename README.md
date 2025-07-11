@@ -115,9 +115,5 @@ This extension is open-source under the MIT License. Contributions and improveme
 
 ---
 
-<h3>Demo Video</h3>
-<iframe 
-  src="[https://drive.google.com/file/d/FILE_ID/preview](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=sharing)" 
-  width="640" height="360" allow="autoplay">
-</iframe>
+**Demo Video:** [Download or stream from Google Drive]([https://drive.google.com/uc?export=download&id=FILE_ID](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=drive_link))
 

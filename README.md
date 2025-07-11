@@ -115,6 +115,6 @@ This extension is open-source under the MIT License. Contributions and improveme
 
 ---
 **Demo Video**
-[![Watch the demo](assets/video-thumbnail.png)]([https://drive.google.com/file/d/FILE_ID/view?usp=sharing](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=drive_link))
+▶️ [Watch the AZ Assistant demo on Google Drive](https://drive.google.com/file/d/1aPKzTogAvPBnfCn53NnuaN_hMlLW_21y/view?usp=drive_link)
 
 
